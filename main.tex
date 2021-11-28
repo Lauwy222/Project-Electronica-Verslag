@@ -3,19 +3,27 @@
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 \usepackage{graphicx}
+\usepackage{multirow}
+
 \graphicspath{ {./IMG/} }
 
 \include{extra/001_front_page}
+
 
 
 \begin{document}
 \maketitle
 \include{extra/002_table_of_contents}
 \include{chapters/001_introduction}
+\include{chapters/002_metingen}
+\include{chapters/003_berekeningen}
+\include{chapters/004_het_circuit}
 
-\include{chapters/excelleren/001_intro}
-\include{chapters/excelleren/002_de_PCB}
-\include{chapters/excelleren/003_volume_besturing}
-\include{chapters/excelleren/004_behuizing}
+\include{chapters/005_excelleren/001_intro}
+\include{chapters/005_excelleren/002_de_PCB}
+\include{chapters/005_excelleren/003_volume_besturing}
+\include{chapters/005_excelleren/004_behuizing}
+
+\include{chapters/005_bronnen}
 
 \end{document}
