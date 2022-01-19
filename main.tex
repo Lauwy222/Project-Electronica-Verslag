@@ -1,11 +1,18 @@
-\documentclass[11pt,dutch]{article}
+\documentclass[11pt,dutch,]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 \usepackage{graphicx}
 \usepackage{multirow}
 
+%\documentclass [a4paper,12pt,oneside,final]{book}
+\usepackage[left=26mm,top=30mm,right=26mm,bottom=35mm]{geometry}
+
 \graphicspath{ {./IMG/} }
+
+%\usepackage{geometry}
+%\usepackage{layout}
+%\setlength{\voffset}{-0.25in}
 
 \include{extra/001_front_page}
 
@@ -13,17 +20,16 @@
 
 \begin{document}
 \maketitle
+
 \include{extra/002_table_of_contents}
 \include{chapters/001_introduction}
-\include{chapters/002_metingen}
-\include{chapters/003_berekeningen}
-\include{chapters/004_het_circuit}
+\include{chapters/002_het_ontwerp}
 
-\include{chapters/005_excelleren/001_intro}
-\include{chapters/005_excelleren/002_de_PCB}
-\include{chapters/005_excelleren/003_volume_besturing}
-\include{chapters/005_excelleren/004_behuizing}
+\include{chapters/003_excelleren/002_de_PCB}
+\include{chapters/003_excelleren/003_volume_besturing}
+\include{chapters/003_excelleren/004_behuizing}
+\include{chapters/003_excelleren/005_conclusie}
 
-\include{chapters/005_bronnen}
+\include{chapters/004_reflectie}
 
 \end{document}
